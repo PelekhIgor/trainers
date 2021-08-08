@@ -1,0 +1,401 @@
+@font-face {
+    font-family: 'Metropolis';
+    src: url('../fonts/Metropolis-Medium.eot');
+    src: url('../fonts/Metropolis-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Metropolis-Medium.woff2') format('woff2'),
+    url('../fonts/Metropolis-Medium.woff') format('woff'),
+    url('../fonts/Metropolis-Medium.ttf') format('truetype'),
+    url('../fonts/Metropolis-Medium.svg#Metropolis-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url('../fonts/Metropolis-Light.eot');
+    src: url('../fonts/Metropolis-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Metropolis-Light.woff2') format('woff2'),
+    url('../fonts/Metropolis-Light.woff') format('woff'),
+    url('../fonts/Metropolis-Light.ttf') format('truetype'),
+    url('../fonts/Metropolis-Light.svg#Metropolis-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Now';
+    src: url('../fonts/Now-Bold.eot');
+    src: url('../fonts/Now-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Now-Bold.woff2') format('woff2'),
+    url('../fonts/Now-Bold.woff') format('woff'),
+    url('../fonts/Now-Bold.ttf') format('truetype'),
+    url('../fonts/Now-Bold.svg#Now-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Now';
+    src: url('../fonts/Now-Medium.eot');
+    src: url('../fonts/Now-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Now-Medium.woff2') format('woff2'),
+    url('../fonts/Now-Medium.woff') format('woff'),
+    url('../fonts/Now-Medium.ttf') format('truetype'),
+    url('../fonts/Now-Medium.svg#Now-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: rgba(0,0,0,0.65);
+    padding: 25px 0 12px;
+    position: fixed;
+    width: 100%;
+
+
+}
+.logo{
+    margin-right: 25px;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+
+}
+
+
+
+header .container.d-flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header form{
+    height: 42px;
+    min-width: 208px;
+    border-radius: 4px;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+
+}
+
+
+header form input{
+    background-color: transparent;
+    border: none;
+    width: 75%;
+    line-height: 42px;
+    padding-left: 15px;
+    font-size: 15px;
+    color: #9e9e9e;
+    text-transform: uppercase;
+    font-family: 'Metropolis';
+}
+
+header form button{
+    width: 23%;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    text-transform: uppercase;
+    border: none;
+    padding-top: 5px;
+    border-radius: 4px;
+    color: red;
+}
+.btn{
+    min-width: 160px;
+    height: 42px ;
+    color: #ffffff;
+    font-size: 15px;
+    background-color: #252525;
+    margin-left: 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: 'Metropolis';
+
+
+
+}
+.icon{
+    margin: 0 14px 0 0;
+
+}
+a.btn.grey{
+    background-color:#464646;
+}
+a.btn.red{
+    background-color: #fa090a;
+}
+
+header .container.d-flex.border{
+    border-top: 2px solid #464646;
+    margin-top: 21px;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li:not(:first-child){
+    padding-left: 30px;
+}
+
+header nav ul li{
+    margin-top: 21px;
+
+
+}
+
+header nav ul li a{
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+}
+header nav ul li:hover:after{
+    content: "";
+    display: block;
+    background-color: #ff0000;
+    width: 100%;
+
+}
+
+header nav ul li:after{
+    display: block;
+    transition: 0.3s;
+    width: 0;
+    content: "";
+    height: 4px;
+    margin-top: 10px;
+}
+
+
+.soc_icon a{
+    margin-left: 16px;
+}
+
+
+.fon img{
+    display: block;
+    width: 100%;
+}
+
+.fon .container.d-flex.border{
+    position: absolute;
+    width: 100%;
+    bottom: 300px;
+
+}
+.fon .container.d-flex.border h1{
+    text-align: center;
+    color: #ffffff;
+    font-size: 51px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    margin-bottom: 34px;
+
+}
+
+
+.fon .container.d-flex.border {
+    border-bottom: 3px solid #ff0000;
+
+}
+
+.content{
+    height:1280px ;
+    background-color: white;
+}
+
+footer{
+    background-color: #010006;
+    padding: 75px 0 62px 0;
+}
+
+.f{
+    max-width: 900px;
+    margin: auto;
+}
+.f p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 19px;
+    line-height: 25px;
+    margin-bottom: 36px;
+    font-family: 'Metropolis';
+}
+
+.email{
+    border: none;
+    background-color: #ffffff;
+    color: #959595;
+    padding: 15px 0 15px 42px ;
+    border-radius: 3px;
+    font-size: 17px;
+    width: 390px;
+    text-transform: uppercase;
+    margin-right: 33px;
+    margin-left: 50px;
+    font-family: 'Metropolis';
+
+}
+.sub{
+    border: none;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 18px 0;
+    text-align: center;
+    border-radius: 3px;
+    width: 310px;
+    font-family: 'Metropolis';
+
+}
+footer section{
+    background-color: #252525;
+    padding: 50px 0 64px 0;
+    margin-top: 50px;
+}
+
+
+
+.container.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+}
+
+.logo_f{
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.soc_foot a:not(:last-of-type){
+    margin-right: 21px;
+}
+
+footer nav ul{
+    list-style: none;
+    text-transform: uppercase;
+    margin-left: 80px;
+}
+
+footer nav ul li a{
+    color: #ffffff;
+    font-size: 13px;
+    text-decoration: none;
+    line-height: 25px;
+    font-family: 'Metropolis';
+
+}
+
+#dialog{
+    max-width: 750px;
+    margin: auto;
+    background-color: #fbfbfb;
+    padding-bottom: 160px;
+
+}
+
+
+
+.ui-dialog-title{
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.ui-dialog-titlebar{
+    padding: 40px 0;
+    background-color: #000000;
+    text-align: center;
+    font-family: 'Now';
+}
+.enter_email{
+    justify-content: space-between;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 570px;
+    margin: auto;
+}
+.label{
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    font-family: 'Now';
+    color: #363636;
+}
+.input{
+    border-color: #b7b7b7;
+    border-radius: 5px;
+    width: 380px;
+    height: 58px ;
+    font-size: 22px;
+}
+.reset{
+    max-width: 528px;
+    margin: auto;
+    text-align: center;
+
+
+}
+.password{
+    border: none;
+    background-color:  #d4d4d4;
+    padding: 20px ;
+    width: 100%;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Now';
+
+}
+.reset p{
+    font-size: 22px;
+    color: #363636;
+    text-transform: uppercase;
+    margin: 29px 0;
+    font-family: 'Now';
+}
+.log{
+    width: 100%;
+    border: none;
+    background-color: #557bcd;
+    text-transform: uppercase;
+    padding: 20px ;
+
+}
+.log a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Now';
+}
+.log a i.fa-facebook-f:before{
+    font-size: 24px;
+    margin-right: 16px;
+
+}
