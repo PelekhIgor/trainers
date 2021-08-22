@@ -5,7 +5,15 @@
 
 }
 @media only screen and (max-width: 767px) {
+    .logo{
+        width: 70px;
+    }
+    header form{
+        min-width: 100px;
+    }
+    header form input{
 
+    }
 }
 @media only screen and (max-width: 420px) {
 

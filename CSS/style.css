@@ -50,6 +50,12 @@
     padding: 0;
     margin: 0;
 }
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+
+}
 header{
     background-color: rgba(0,0,0,0.65);
     padding: 25px 0 12px;
@@ -61,14 +67,6 @@ header{
 .logo{
     margin-right: 25px;
 }
-
-.container{
-    max-width: 1140px;
-    margin: auto;
-
-}
-
-
 
 header .container.d-flex{
     display: flex;
@@ -115,7 +113,7 @@ header form button{
 }
 .btn{
     min-width: 160px;
-    height: 42px ;
+    max-height: 42px ;
     color: #ffffff;
     font-size: 15px;
     background-color: #252525;
@@ -123,12 +121,9 @@ header form button{
     border-radius: 4px;
     text-decoration: none;
     text-align: center;
-    padding-top: 10px;
-    box-sizing: border-box;
+    padding: 12px 0;
     text-transform: uppercase;
     font-family: 'Metropolis';
-
-
 
 }
 .icon{
@@ -147,22 +142,22 @@ header .container.d-flex.border{
     margin-top: 21px;
 }
 
-header nav ul{
-    display: flex;
+.menu{
     list-style: none;
+    display: flex;
+    max-width: 1140px;
+    margin: auto;
 }
 
-header nav ul li:not(:first-child){
+.menu li:not(:first-child){
     padding-left: 30px;
 }
 
-header nav ul li{
+.menu li{
     margin-top: 21px;
-
-
 }
 
-header nav ul li a{
+.menu li a{
     color: #ffffff;
     font-size: 20px;
     text-transform: uppercase;
@@ -170,7 +165,7 @@ header nav ul li a{
     font-family: 'Bebas Neue', cursive;
     font-weight: normal;
 }
-header nav ul li:hover:after{
+.menu li:hover:after{
     content: "";
     display: block;
     background-color: #ff0000;
@@ -178,7 +173,7 @@ header nav ul li:hover:after{
 
 }
 
-header nav ul li:after{
+.menu li:after{
     display: block;
     transition: 0.3s;
     width: 0;
@@ -193,18 +188,24 @@ header nav ul li:after{
 }
 
 
-.fon img{
+
+.background img{
     display: block;
     width: 100%;
+
 }
 
-.fon .container.d-flex.border{
+.border_one{
     position: absolute;
     width: 100%;
-    bottom: 300px;
+    border-bottom: 3px solid #ff0000;
+    top: 240px;
+
+
+
 
 }
-.fon .container.d-flex.border h1{
+.border_one h1{
     text-align: center;
     color: #ffffff;
     font-size: 51px;
@@ -216,13 +217,8 @@ header nav ul li:after{
 }
 
 
-.fon .container.d-flex.border {
-    border-bottom: 3px solid #ff0000;
-
-}
-
 .content{
-    height:1280px ;
+    min-height:1280px ;
     background-color: white;
 }
 
@@ -242,6 +238,7 @@ footer{
     line-height: 25px;
     margin-bottom: 36px;
     font-family: 'Metropolis';
+    text-transform: uppercase;
 }
 
 .email{
@@ -284,7 +281,7 @@ footer section{
     justify-content: space-between;
 }
 
-.menu{
+.choice{
     display: flex;
 }
 
@@ -307,10 +304,15 @@ footer nav ul li a{
     color: #ffffff;
     font-size: 13px;
     text-decoration: none;
-    line-height: 25px;
+    line-height: 32px;
     font-family: 'Metropolis';
 
 }
+
+
+
+
+
 
 #dialog{
     max-width: 750px;
@@ -319,8 +321,6 @@ footer nav ul li a{
     padding-bottom: 160px;
 
 }
-
-
 
 .ui-dialog-title{
     color: white;
